@@ -9,15 +9,13 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 // middleware
+app.use(express.static('./public'));
 app.use(express.json());
 
 // Router controllers
 const tasks = require('./routes/tasks')
 
 // Routes
-app.get("/", (req, res) => {
-    res.send('task manager works');
-});
 
 app.use('/api/v1/tasks', tasks);
 

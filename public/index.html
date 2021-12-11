@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- font awesome -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <title>Task Manager</title>
+</head>
+<body>
+    
+    <form class="task-form">
+
+        <h4>Task manager</h4>
+
+        <div class="form-control">
+
+            <input 
+            type="text"
+            name="name"
+            class="task-input"
+            placeholder="Add name task"
+            />
+            <button type="submit" class="task-btn task--submit">submit</button>
+
+            <div class="task-alert"></div>
+
+        </div>
+
+    </form>
+    <section class="task-container">
+        <p class="task-loading--text">Loading...</p>
+        <div class="tasks"></div>
+    </section>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script type="module" src="./js/show-tasks.js"></script>
+  <script type="module" src="./js/delete-task.js"></script>
+  <script type="module" src="./js/add-tasks.js"></script>
+</body>
+</html>
