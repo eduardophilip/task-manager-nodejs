@@ -12,7 +12,7 @@ const getAllTasks = async (req, res, next) => {
         res.status(200).json({
             success: true,
             count: task.length,
-            data: task
+            tasks: task
         });
 
     } catch(err) {
