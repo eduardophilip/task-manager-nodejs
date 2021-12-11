@@ -15,7 +15,7 @@ export const showTasks = async () => {
 
         const allTasks = tasks.map(task => {
             const { name, completed, _id} = task;
-            const html = `<div class="single-task ${completed && 'task-completed'}" ><i class="far fa-check-circle"><h5><span></span>${name}</h5><div class="task-links"><a href="task.html?id=${_id}" class="edit-link"><i class="fas fa-edit"></i></a><button type="button" class="delete-btn" data-id="${_id}">
+            const html = `<div class="single-task ${completed && 'task-completed'}" ><i class="far fa-check-circle"><h5><span></span>${name}</h5><div class="task-links"><a href="edit-task.html?id=${_id}" class="edit-link"><i class="fas fa-edit"></i></a><button type="button" class="delete-btn" data-id="${_id}">
             <i class="fas fa-trash"></i></button></div></div>`;
             return html;
         }).join('');;

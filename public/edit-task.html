@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit task</title>
+
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="css/edit-task.css" />
+
+</head>
+<body>
+    
+    <section class="edit edit__container">
+        <form class="edit__form">
+            <h1>Edit task</h1>
+            <div class="edit__form--control">
+
+                <div class="form__control">
+                    <label class="edit__label" for="name">Name</label>
+                    <input class="edit__text" type="text" name="name" id="name">
+                </div>
+               
+                <div class="form__control">
+                    <label class="edit__label" for="completed">Completed</label>
+                    <input class="edit__checkbox" type="checkbox" name="completed" id="completed">
+                </div>
+
+                <button class="edit__btn btn" type="submit">Edit</button>
+            </div>
+            <div class="task-alert"></div>
+        </form>
+
+        <a class="edit__btn--back btn" href="index.html">Back to tasks</a>
+
+    </section>
+
+    <!-- axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script type="module" src="js/edit-task.js"></script>
+    <script type="module" src="./js/message-success.js"></script>
+
+</body>
+</html>
