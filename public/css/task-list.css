@@ -1,0 +1,59 @@
+@import 'main.css';
+
+.task__list {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.task__item {
+    display: grid;
+    gap: 10px;
+}
+
+.single-task {
+    background-color: var(--white);
+    border-radius: var(--borderRadius);
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.single-task span {
+    margin-right: 10px;
+}
+
+.single-task .fa-check-circle {
+    visibility: hidden;
+}
+
+.task-completed {
+    text-decoration: line-through;
+}
+
+.task-completed .fa-check-circle {
+    visibility: visible;
+}
+
+
+.task-links {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-link, .delete-btn {
+    background-color: transparent;
+    border: transparent;
+    font-size: 0.75rem;
+}
+.edit-link {
+    color: var(--green-dark);
+}
+.delete-btn {
+    color: var(--red-dark);
+}
+
+p {
+    font-family: var(--bodyFont);
+    font-weight: 400;
+}
