@@ -1,0 +1,43 @@
+@import  'main.css';
+
+.task__form {
+    background-color: var(--white);
+    width: 100%;
+    padding: 70px;
+    margin-top: 30px;
+    box-shadow: var(--shadow-1);
+}
+
+.task__title {
+    text-align: center;
+}
+
+.task__input {   
+  border-radius: var(--borderRadius);
+  padding: 8px;
+}
+
+.task__submit {
+    width: 100%;  
+    border-radius: var(--borderRadius);
+}
+
+@media screen and (min-width: 576px) {
+    .task__form--control {
+        display: flex;
+    }
+
+    .task__input {
+        border-radius: 0;
+        border-top-left-radius: var(--borderRadius);
+        border-bottom-left-radius: var(--borderRadius);
+    }
+
+    .task__submit {
+        width: 175px;
+        border-radius: 0;
+        border-top-right-radius: var(--borderRadius);
+        border-bottom-right-radius: var(--borderRadius);
+    }
+
+}
