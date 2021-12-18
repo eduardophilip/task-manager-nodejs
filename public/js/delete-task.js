@@ -1,5 +1,5 @@
-const tasksDOM = document.querySelector('.tasks');
-const loadingDOM = document.querySelector('.task-loading--text');
+const tasksDOM = document.querySelector('.task__item');
+const loadingDOM = document.querySelector('.task__loading');
 import { showTasks } from "./show-tasks.js";
 
 tasksDOM.addEventListener('click', async (e) => {

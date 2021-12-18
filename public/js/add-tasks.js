@@ -1,8 +1,8 @@
 import { showTasks } from "./show-tasks.js";
 import { showSuccessMessage, hiddenSuccessMessage } from "./message-success.js";
-const formDOM = document.querySelector('.task-form');
-const taskInputDOM = document.querySelector('.task-input');
-const formAlertDOM = document.querySelector('.task-alert');
+const formDOM = document.querySelector('.task__form');
+const taskInputDOM = document.querySelector('.task__input');
+const formAlertDOM = document.querySelector('.task__alert');
 
 formDOM.addEventListener('submit', async (e) => {
 

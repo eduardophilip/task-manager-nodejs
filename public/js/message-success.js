@@ -1,4 +1,4 @@
-const formAlertDOM = document.querySelector('.task-alert');
+const formAlertDOM = document.querySelector('.task__alert');
 
 export const showSuccessMessage = () => {
     formAlertDOM.style.display = 'block';
