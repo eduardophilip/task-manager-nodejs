@@ -45,12 +45,20 @@
     background-color: transparent;
     border: transparent;
     font-size: 0.75rem;
+    cursor: pointer;
 }
 .edit-link {
     color: var(--green-dark);
 }
 .delete-btn {
     color: var(--red-dark);
+}
+
+.empty__list {
+    font-family: var(--bodyFont);
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 p {

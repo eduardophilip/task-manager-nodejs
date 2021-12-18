@@ -8,7 +8,7 @@ export const showTasks = async () => {
 
         const { data: { tasks: tasks } } = await axios.get('/api/v1/tasks');
         if(tasks.length < 1) {
-            taskstDOM.innerHTML = '<h5 class="empty-list">No tasks in your list</h5>';
+            tasksDOM.innerHTML = '<p class="empty__list">No tasks in your list</p>';
             loadingDOM.style.visibility = 'hidden';
             return
         } 
